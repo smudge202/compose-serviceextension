@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22609.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D1C122FC-7FBE-4FA2-BC1B-099A9801B146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compose.ServiceExtension", "src\Compose.ServiceExtension\Compose.ServiceExtension.csproj", "{843C03E5-7697-4925-8A20-27F692879764}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{610B48FC-B978-405E-94D8-DF8D197ED144}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{843C03E5-7697-4925-8A20-27F692879764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843C03E5-7697-4925-8A20-27F692879764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843C03E5-7697-4925-8A20-27F692879764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843C03E5-7697-4925-8A20-27F692879764}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{843C03E5-7697-4925-8A20-27F692879764} = {D1C122FC-7FBE-4FA2-BC1B-099A9801B146}
+	EndGlobalSection
+EndGlobal
