@@ -1,6 +1,6 @@
 #Compose.ServiceExtension
 
-This package simple drops boiler plate code into your project and brings in the necessary Microsoft namespaces so you can quickly get started defining your services.
+This package simply drops boiler plate code into your project and brings in the necessary Microsoft namespaces so you can quickly get started defining your services.
 
 We keep this project up to date with the latest _stable_ development at [Microsoft.Framework.DependencyInjection] so you can pick up and go.
 
