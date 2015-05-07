@@ -1,26 +1,20 @@
-﻿using Microsoft.Framework.ConfigurationModel;
-using Microsoft.Framework.DependencyInjection;
+﻿using Microsoft.Framework.DependencyInjection;
 using System.Collections.Generic;
 
 namespace $rootnamespace$
 {
 	public static class ServiceExtensions
 	{
-		public static IServiceCollection AddYourService(this IServiceCollection services, IConfiguration configuration = null)
+		public static IServiceCollection AddYourService(this IServiceCollection services)
 		{
-			services.TryAdd(GetDefaultServices(configuration));
+			services.TryAdd(GetDefaultServices());
 			return services;
 		}
 
-		private static IEnumerable<IServiceDescriptor> GetDefaultServices(IConfiguration configuration = null)
+		private static IEnumerable<IServiceDescriptor> GetDefaultServices()
 		{
-			var describe = new ServiceDescriber(configuration);
-
-			// TODO: yield your service bindings
-
-			yield return describe.Transient<YourService, YourService>();
+			// TODO: replace this with your service bindings
+			yield return ServiceDescriptor.Transient<ISomeService, YourService>();
 		}
-
-		internal class YourService { }
 	}
 }

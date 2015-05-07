@@ -7,16 +7,11 @@ by the addition of a "ServiceExtensions" class in your project.
 Dependency Bindings
 -------------------
 
-In the provided code is a TODO comment in the GetDefaultServices method.  Add
+In the provided code is a TODO comment in the GetDefaultServices method. Add
 your dependencies there, as you would a normal DI Container:
 
-yield return describe.Transient<IYourService, YourServiceImplementation>();
-yield return describe.Singleton<IYourSingleton, SingletonImplementation>();
-
-These bindings can be overriden in configuration.  The ServiceDescriber will
-look for a config key matching the fully qualified Interface name, and if it
-finds one, will override the implementation specified in code with the fully
-qualified service name in the config value.
+yield return ServiceDescriptor.Transient<IYourService, YourServiceImplementation>();
+yield return ServiceDescriptor.Singleton<IYourSingleton, SingletonImplementation>();
 
 Dependent Services
 ------------------

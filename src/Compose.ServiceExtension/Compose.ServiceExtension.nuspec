@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Compose.ServiceExtension</id>
-    <version>0.1.1-beta</version>
+    <version>0.1.2-beta</version>
     <authors>Tommy Long, 4Com plc</authors>
     <owners>Tommy Long</owners>
     <iconUrl>https://raw.githubusercontent.com/Smudge202/Compose/master/Compose-Icon.png</iconUrl>
@@ -12,7 +12,7 @@
     <description>The easy wasy to compose service extensions in .Net</description>
     <tags>Compose</tags>
     <dependencies>
-      <dependency id="Microsoft.Framework.DependencyInjection" version="1.0.0-beta3" />
+      <dependency id="Microsoft.Framework.DependencyInjection" version="1.0.0-beta4" />
     </dependencies>
   </metadata>
   <files>
